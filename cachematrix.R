@@ -1,10 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+
+##this function creates a special object with getter and setter functions
 
 makeCacheMatrix <- function(x = matrix()) {
-<<<<<<< HEAD
   m <- NULL
   set <- function(y) {
     x <<- y
@@ -16,17 +14,12 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get = get,
        setinverse= setinverse,
        getinverse = getinverse)
-=======
->>>>>>> 7f657dd22ac20d22698c53b23f0057e1a12c09b7
-
 }
 
-
-## Write a short comment describing this function
+## this function computes the inverse of a matrix and cahes the result
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
-<<<<<<< HEAD
   
   i<-x$getinverse()
   if (!is.null(i))
@@ -41,6 +34,5 @@ cacheSolve <- function(x, ...) {
   
 
   i
-=======
->>>>>>> 7f657dd22ac20d22698c53b23f0057e1a12c09b7
+
 }
